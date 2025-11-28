@@ -1,5 +1,9 @@
 import asyncio
 from os import environ
+from keep_alive import keep_alive
+
+keep_alive()
+
 from pyrogram import Client, filters, idle
 
 API_ID = int(environ.get("API_ID"))
